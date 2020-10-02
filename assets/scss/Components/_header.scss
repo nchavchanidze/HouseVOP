@@ -1,0 +1,32 @@
+header {
+    position: fixed;
+    z-index: 99999;
+    width: 100%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    nav {
+        background-color: transparent;
+        .navbar-brand {
+            h1 {
+                color: #fff;
+                font-family: $font1;
+                font-size: 36px;
+            }
+            p {
+                color: #fff;
+                font-family: $font2;
+                font-size: 12px;
+                letter-spacing: 0.12em;
+            }
+        }
+        .nav-link {
+            color: #fff !important;
+            font-family: $font2;
+            font-size: 14px;
+            letter-spacing: 0.05em;
+            padding: 0;
+            margin-right: 40px;
+        }
+    }
+}

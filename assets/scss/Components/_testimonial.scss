@@ -1,0 +1,30 @@
+.testimonial {
+    height: 100%;
+    background-color: $color3;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    position: relative;
+    .back-txt {
+        position: absolute;
+        top: 50%;
+        right: 15%;
+        color: #fff;
+        opacity: 0.02;
+        font-size: 400px;
+        line-height: 0;
+        font-family: $font3;
+    }
+    .testimonial-img {
+        height: 80px;
+        margin-bottom: 53px;
+        img {
+            height: 100%;
+        }
+    }
+    p {
+        text-align: center;
+        font-family: $font4;
+        color: $color1;
+        font-size: 20px;
+    }
+}

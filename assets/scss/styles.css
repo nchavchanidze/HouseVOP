@@ -1,0 +1,520 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+
+p {
+  line-height: 1.5;
+}
+
+strong {
+  font-weight: bold;
+}
+
+input,
+textarea,
+select,
+button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 0;
+  padding: 0;
+  outline: none;
+  border-radius: 0;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: none !important;
+}
+
+button {
+  cursor: pointer;
+}
+
+textarea {
+  resize: none;
+  outline: none;
+  width: 100%;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h4 {
+  font-weight: unset !important;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "PostNoBillsJaffna-SemiBold";
+  src: url("../fonts/PostNoBillsJaffna-SemiBold.eot");
+  src: url("../fonts/PostNoBillsJaffna-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PostNoBillsJaffna-SemiBold.ttf") format("truetype"), url("../fonts/PostNoBillsJaffna-SemiBold.woff") format("woff"), url("../fonts/PostNoBillsJaffna-SemiBold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway-Regular";
+  src: url("../fonts/Raleway-Regular.eot");
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway-Bold';
+  src: url("../fonts/Raleway-Bold.eot");
+  src: url("../fonts/Raleway-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Bold.ttf") format("truetype"), url("../fonts/Raleway-Bold.woff") format("woff"), url("../fonts/Raleway-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay-Bold";
+  src: url("../fonts/PlayfairDisplay-Bold.eot");
+  src: url("../fonts/PlayfairDisplay-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/PlayfairDisplay-Bold.ttf") format("truetype"), url("../fonts/PlayfairDisplay-Bold.woff") format("woff"), url("../fonts/PlayfairDisplay-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../fonts/Roboto-Light.eot");
+  src: url("../fonts/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Light.ttf") format("truetype"), url("../fonts/Roboto-Light.woff") format("woff"), url("../fonts/Roboto-Light.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+header {
+  position: fixed;
+  z-index: 99999;
+  width: 100%;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+
+header nav {
+  background-color: transparent;
+}
+
+header nav .navbar-brand h1 {
+  color: #fff;
+  font-family: "PostNoBillsJaffna-SemiBold";
+  font-size: 36px;
+}
+
+header nav .navbar-brand p {
+  color: #fff;
+  font-family: "Raleway-Regular";
+  font-size: 12px;
+  letter-spacing: 0.12em;
+}
+
+header nav .nav-link {
+  color: #fff !important;
+  font-family: "Raleway-Regular";
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  padding: 0;
+  margin-right: 40px;
+}
+
+#home .home-slider .slide-1 {
+  background-image: url(../img/home/slide-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 100vh;
+}
+
+#home .home-slider .slide-2 {
+  background-image: url(../img/home/slide-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 100vh;
+}
+
+#home .home-slider .slide-3 {
+  background-image: url(../img/home/slide-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 100vh;
+}
+
+#home .home-slider .home-container {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+#home .home-slider .home-container h1 {
+  text-align: center;
+  font-size: 48px;
+  color: #d4c17f;
+  font-family: "PlayfairDisplay-Bold";
+}
+
+#home .home-slider .home-container .home-scroll-icon {
+  margin-top: 70px;
+  height: 40px;
+}
+
+#home .home-slider .home-container .home-scroll-icon img {
+  height: 100%;
+}
+
+#home .home-slider .home-contact {
+  margin: 0 auto;
+  z-index: 999999999;
+  color: #fff;
+  width: 50%;
+  margin-top: 200px;
+}
+
+#home .home-slider .home-contact .home-location p {
+  font-family: "Raleway-Regular";
+  font-size: 18px;
+}
+
+#home .home-slider .home-contact .home-location .home-location-icon {
+  margin-right: 18px;
+}
+
+#home .home-slider .home-contact .home-location .home-location-icon img {
+  height: 21px;
+}
+
+#home .home-slider .home-contact .home-phone p {
+  font-family: "Raleway-Regular";
+  font-size: 18px;
+}
+
+#home .home-slider .home-contact .home-phone .home-phone-icon {
+  margin-right: 18px;
+}
+
+#home .home-slider .home-contact .home-phone .home-phone-icon img {
+  height: 21px;
+}
+
+.testimonial {
+  height: 100%;
+  background-color: #242B33;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  position: relative;
+}
+
+.testimonial .back-txt {
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  color: #fff;
+  opacity: 0.02;
+  font-size: 400px;
+  line-height: 0;
+  font-family: "PlayfairDisplay-Bold";
+}
+
+.testimonial .testimonial-img {
+  height: 80px;
+  margin-bottom: 53px;
+}
+
+.testimonial .testimonial-img img {
+  height: 100%;
+}
+
+.testimonial p {
+  text-align: center;
+  font-family: "Roboto-Light";
+  color: #fff;
+  font-size: 20px;
+}
+
+#apartments {
+  height: 100%;
+  background-color: #242B33;
+  padding-bottom: 120px;
+  position: relative;
+}
+
+#apartments .back-txt {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  color: #fff;
+  opacity: 0.02;
+  font-size: 400px;
+  line-height: 0;
+  font-family: "PlayfairDisplay-Bold";
+}
+
+#apartments .title {
+  font-family: "PlayfairDisplay-Bold";
+  font-size: 36px;
+  color: #d4c17f;
+  margin-bottom: 100px;
+}
+
+#apartments .row:last-child {
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+#apartments .row .apartment-img-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+#apartments .row .apartment-img-wrapper img {
+  width: 100%;
+}
+
+#apartments .row .apartment-img-wrapper p {
+  font-family: "Raleway-Regular";
+  color: #fff;
+  font-size: 24px;
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+}
+
+#mortgage {
+  height: 100%;
+  padding-top: 180px;
+  padding-bottom: 180px;
+  background-image: url(../img/mortgage/mortgage-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#mortgage .title {
+  font-family: "PlayfairDisplay-Bold";
+  font-size: 36px;
+  color: #d4c17f;
+}
+
+#mortgage .mortagage-text-wrapper {
+  margin-top: 50px;
+}
+
+#mortgage .mortagage-text-wrapper p {
+  font-family: "Raleway-Regular";
+  color: #fff;
+  font-size: 16px;
+}
+
+#mortgage .mortagage-forms input {
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 255px;
+  height: 50px;
+}
+
+#mortgage .mortagage-forms input::-webkit-input-placeholder {
+  text-align: center;
+  font-family: "Raleway-Regular";
+  font-size: 14px;
+  color: #BEBEBE;
+}
+
+#mortgage .mortagage-forms input:-ms-input-placeholder {
+  text-align: center;
+  font-family: "Raleway-Regular";
+  font-size: 14px;
+  color: #BEBEBE;
+}
+
+#mortgage .mortagage-forms input::-ms-input-placeholder {
+  text-align: center;
+  font-family: "Raleway-Regular";
+  font-size: 14px;
+  color: #BEBEBE;
+}
+
+#mortgage .mortagage-forms input::placeholder {
+  text-align: center;
+  font-family: "Raleway-Regular";
+  font-size: 14px;
+  color: #BEBEBE;
+}
+
+#mortgage .mortagage-forms .name-input {
+  margin-right: 30px;
+}
+
+#mortgage .mortagage-forms .submit-wrapper {
+  margin-top: 35px;
+}
+
+#mortgage .mortagage-forms .submit-wrapper span {
+  text-align: center;
+  font-family: "Raleway-Regular";
+  font-size: 13px;
+  color: #E7E7E7;
+}
+
+#mortgage .mortagage-forms .submit-wrapper input[type=submit] {
+  background-color: #d4c17f;
+  font-family: "Raleway-Regular";
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+}
+/*# sourceMappingURL=styles.css.map */

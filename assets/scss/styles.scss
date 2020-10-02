@@ -1,0 +1,16 @@
+//Partials
+@import './Partials/reset';
+@import './Partials/fonts';
+
+//Modules
+@import './Modules/variables';
+@import './Modules/base';
+@import './Modules/media';
+
+//Components
+@import './Components/header';
+@import './Components/home';
+@import './Components/testimonial';
+@import './Components/apartments';
+@import './Components/mortgage';
+@import './Components/footer';

@@ -1,0 +1,81 @@
+#home {
+    .home-slider {
+        .slide-1 {
+            background-image: url(../img/home/slide-1.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            height: 100vh;
+        }
+        .slide-2 {
+            background-image: url(../img/home/slide-1.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            height: 100vh;
+        }
+        .slide-3 {
+            background-image: url(../img/home/slide-1.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            height: 100vh;
+        }
+        .home-container {
+            position: absolute;
+            top: 65%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            h1 {
+                text-align: center;
+                font-size: 48px;
+                color: $color2;
+                font-family: $font3;
+            }
+            .home-scroll-icon {
+                margin-top: 70px;
+                height: 40px;
+                img {
+                    height: 100%;
+                }
+            }
+        }
+        
+        .home-contact {
+            margin: 0 auto;
+            z-index: 999999999;
+            color: $color1;
+            width: 50%;
+            margin-top: 200px;
+            .home-location {
+                // margin-right: 100px;
+                p {
+                    font-family: $font2;
+                    font-size: 18px;
+                }
+                .home-location-icon {
+                    margin-right: 18px;
+                    img {
+                        height: 21px;
+                    }
+                }
+            }
+            .home-phone {
+                p {
+                    font-family: $font2;
+                    font-size: 18px;
+                }
+                .home-phone-icon {
+                    margin-right: 18px;
+                    img {
+                        height: 21px;
+                    }
+                }
+            }
+        }
+    }
+}

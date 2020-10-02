@@ -1,0 +1,43 @@
+#apartments {
+    height: 100%;
+    background-color: $color3;
+    padding-bottom: 120px;
+    position: relative;
+    .back-txt {
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        color: #fff;
+        opacity: 0.02;
+        font-size: 400px;
+        line-height: 0;
+        font-family: $font3;
+    }
+    .title {
+        font-family: $font3;
+        font-size: 36px;
+        color: $color2;
+        margin-bottom: 100px;
+    }
+    .row {
+        &:last-child {
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+        .apartment-img-wrapper {
+            width: 100%;
+            position: relative;
+            img {
+                width: 100%;
+            }
+            p {
+                font-family: $font2;
+                color: $color1;
+                font-size: 24px;
+                position: absolute;
+                bottom: 50px;
+                left: 50px;
+            }
+        }
+    }
+}

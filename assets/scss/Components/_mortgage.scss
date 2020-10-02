@@ -1,0 +1,54 @@
+#mortgage {
+    height: 100%;
+    padding-top: 180px;
+    padding-bottom: 180px;
+    background-image: url(../img/mortgage/mortgage-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .title {
+        font-family: $font3;
+        font-size: 36px;
+        color: $color2;
+    }
+    .mortagage-text-wrapper {
+        margin-top: 50px;
+        p {
+            font-family: $font2;
+            color: $color1;
+            font-size: 16px;
+        }
+    }
+    .mortagage-forms {
+        input {
+            background-color: rgba(255, 255, 255, 0.2);
+            width: 255px;
+            height: 50px;
+            &::placeholder {
+                text-align: center;
+                font-family: $font2;
+                font-size: 14px;
+                color: $color4;
+            }
+        }
+        .name-input {
+            margin-right: 30px;
+        }
+        .submit-wrapper {
+            margin-top: 35px;
+            span {
+                text-align: center;
+                font-family: $font2;
+                font-size: 13px;
+                color: $color5;
+            }
+            input[type=submit] {
+                background-color: $color2;
+                font-family: $font2;
+                font-weight: 700;
+                font-size: 16px;
+                color: $color1;
+            }
+        }
+    }
+}
