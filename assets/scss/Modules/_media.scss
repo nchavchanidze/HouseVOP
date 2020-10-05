@@ -1,0 +1,119 @@
+@media (max-width: 1199px) {
+    #mortgage {
+        text-align: center;
+        .mortgage-container {
+            justify-content: center !important;
+        }
+        .mortgage-forms {
+            margin-top: 3rem;
+        }
+    }
+    #video {
+        .video-container {
+            width: 75vw !important;
+        }
+    }
+    #map-section {
+        .map-container {
+            width: 75vw !important;
+        }
+    }
+    .contact-forms {
+        width: 75% !important;
+        margin: 0 auto;
+        justify-content: center !important;
+        .phone-input {
+            margin-top: 2rem;
+        }
+        .submit-btn {
+            margin-top: 2rem;
+        }
+    }
+}
+@media (max-width: 991px) {
+    .testimonial {
+        .testimonial-img {
+            margin-top: 2rem;
+        }
+    }
+}
+
+@media (max-width: 763px) {
+    #apartments {
+        .apartment-img-wrapper {
+            margin-top: 2rem;
+        }
+    }
+    .name-form {
+        justify-content: center !important;
+        flex-direction: column;
+        .name-input {
+            margin-right: 0 !important;
+            margin-bottom: 1rem;
+        }
+    }
+    .submit-form {
+        justify-content: center !important;
+        flex-direction: column;
+        .submit-btn {
+            margin-top: 1rem;
+        }
+    }
+    .contact-forms {
+        span {
+            margin-bottom: 2rem !important;
+        }
+    }
+    .footer-links {
+        text-align: left;
+        justify-content: center !important;
+        align-items: center !important;
+        margin-top: 2rem;
+        .footer-socials {
+            width: 50%;
+        }
+    }
+}
+
+@media (max-width: 588px) {
+    .home-contact {
+        justify-content: center !important;
+        width: 75% !important;
+    }
+    #apartments {
+        .title {
+            text-align: center !important;
+        }
+    }
+    #map-section {
+        .title {
+            text-align: center !important;
+        }
+    }
+    #contact {
+        .title {
+            text-align: center !important;
+        }
+    }
+}
+
+@media (max-width: 491px) {
+    #apartments {
+        .back-txt {
+            font-size: 269px !important;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .home-container {
+        h1 {
+            font-size: 35px !important;
+        }
+    }
+    #video {
+        .video-container {
+            width: 100vw !important;
+        }
+    }
+}

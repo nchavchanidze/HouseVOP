@@ -1,0 +1,44 @@
+#contact {
+    background-color: $color3;
+    padding: 180px 0;
+    .title {
+        font-family: $font3;
+        font-size: 36px;
+        color: $color2;
+        margin-bottom: 50px;
+    }
+    .contact-forms {
+        input {
+            background-color: rgba(255, 255, 255, 0.2);
+            width: 255px;
+            height: 50px;
+            color: $color1;
+            padding: 0 15px;
+            &::placeholder {
+                text-align: center;
+                font-family: $font2;
+                font-size: 14px;
+                color: $color4;
+            }
+        }
+        input[type="submit"] {
+            background-color: $color2;
+            font-family: $font2;
+            font-weight: 700;
+            font-size: 16px;
+            color: $color1;
+            transition: .3s;
+            &:hover {
+                background-color: $color1;
+                color: $color2;
+                transition: .3s;
+            }
+        }
+        span {
+            text-align: center;
+            font-family: $font2;
+            font-size: 13px;
+            color: $color5;
+        }
+    }
+}

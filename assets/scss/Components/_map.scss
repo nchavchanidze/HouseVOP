@@ -1,0 +1,19 @@
+#map-section {
+    height: 100%;
+    background-color: $color3;
+    position: relative;
+    width: 100%;
+    .title {
+        font-family: $font3;
+        font-size: 36px;
+        color: $color2;
+        margin-bottom: 100px;
+    }
+    .map-container {
+        height: 36vh;
+        width: 57vw;
+        position: relative;
+        z-index: 999;
+        margin: 0 auto;
+    }
+}

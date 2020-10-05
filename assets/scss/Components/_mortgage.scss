@@ -11,7 +11,7 @@
         font-size: 36px;
         color: $color2;
     }
-    .mortagage-text-wrapper {
+    .mortgage-text-wrapper {
         margin-top: 50px;
         p {
             font-family: $font2;
@@ -19,11 +19,37 @@
             font-size: 16px;
         }
     }
-    .mortagage-forms {
+    .mortgage-forms {
         input {
             background-color: rgba(255, 255, 255, 0.2);
             width: 255px;
             height: 50px;
+            color: $color1;
+            padding: 0 15px;
+            &::-webkit-input-placeholder {
+                text-align: center;
+                font-family: $font2;
+                font-size: 14px;
+                color: $color4;
+            }
+            &::-moz-placeholder {
+                text-align: center;
+                font-family: $font2;
+                font-size: 14px;
+                color: $color4;
+            }
+            &:-ms-input-placeholder {
+                text-align: center;
+                font-family: $font2;
+                font-size: 14px;
+                color: $color4;
+            }
+            &::-ms-input-placeholder {
+                text-align: center;
+                font-family: $font2;
+                font-size: 14px;
+                color: $color4;
+            }
             &::placeholder {
                 text-align: center;
                 font-family: $font2;
@@ -42,12 +68,18 @@
                 font-size: 13px;
                 color: $color5;
             }
-            input[type=submit] {
+            input[type="submit"] {
                 background-color: $color2;
                 font-family: $font2;
                 font-weight: 700;
                 font-size: 16px;
                 color: $color1;
+                transition: 0.3s;
+                &:hover {
+                    background-color: $color1;
+                    color: $color2;
+                    transition: 0.3s;
+                }
             }
         }
     }

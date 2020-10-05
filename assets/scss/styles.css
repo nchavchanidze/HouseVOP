@@ -146,8 +146,8 @@ textarea,
 select,
 button {
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border: 0;
   padding: 0;
   outline: none;
@@ -231,6 +231,125 @@ html {
   font-style: normal;
 }
 
+@media (max-width: 1199px) {
+  #mortgage {
+    text-align: center;
+  }
+  #mortgage .mortgage-container {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  #mortgage .mortgage-forms {
+    margin-top: 3rem;
+  }
+  #video .video-container {
+    width: 75vw !important;
+  }
+  #map-section .map-container {
+    width: 75vw !important;
+  }
+  .contact-forms {
+    width: 75% !important;
+    margin: 0 auto;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .contact-forms .phone-input {
+    margin-top: 2rem;
+  }
+  .contact-forms .submit-btn {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .testimonial .testimonial-img {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 763px) {
+  #apartments .apartment-img-wrapper {
+    margin-top: 2rem;
+  }
+  .name-form {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .name-form .name-input {
+    margin-right: 0 !important;
+    margin-bottom: 1rem;
+  }
+  .submit-form {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .submit-form .submit-btn {
+    margin-top: 1rem;
+  }
+  .contact-forms span {
+    margin-bottom: 2rem !important;
+  }
+  .footer-links {
+    text-align: left;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    margin-top: 2rem;
+  }
+  .footer-links .footer-socials {
+    width: 50%;
+  }
+}
+
+@media (max-width: 588px) {
+  .home-contact {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    width: 75% !important;
+  }
+  #apartments .title {
+    text-align: center !important;
+  }
+  #map-section .title {
+    text-align: center !important;
+  }
+  #contact .title {
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 491px) {
+  #apartments .back-txt {
+    font-size: 269px !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .home-container h1 {
+    font-size: 35px !important;
+  }
+  #video .video-container {
+    width: 100vw !important;
+  }
+}
+
 header {
   position: fixed;
   z-index: 99999;
@@ -238,6 +357,8 @@ header {
   right: 0;
   left: 0;
   margin: 0 auto;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 header nav {
@@ -264,6 +385,54 @@ header nav .nav-link {
   letter-spacing: 0.05em;
   padding: 0;
   margin-right: 40px;
+  padding: 5px 5px !important;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+header nav .nav-link:hover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+header nav .nav-link::after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: ".";
+  color: transparent;
+  background: #d4c17f;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+header nav .nav-link:hover::after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+header nav .navbar-toggler {
+  border: none;
+}
+
+.header-active {
+  background-color: #242B33;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 #home .home-slider .slide-1 {
@@ -369,6 +538,7 @@ header nav .nav-link {
   font-size: 400px;
   line-height: 0;
   font-family: "PlayfairDisplay-Bold";
+  white-space: nowrap;
 }
 
 .testimonial .testimonial-img {
@@ -390,7 +560,6 @@ header nav .nav-link {
 #apartments {
   height: 100%;
   background-color: #242B33;
-  padding-bottom: 120px;
   position: relative;
 }
 
@@ -403,6 +572,7 @@ header nav .nav-link {
   font-size: 400px;
   line-height: 0;
   font-family: "PlayfairDisplay-Bold";
+  white-space: nowrap;
 }
 
 #apartments .title {
@@ -451,70 +621,275 @@ header nav .nav-link {
   color: #d4c17f;
 }
 
-#mortgage .mortagage-text-wrapper {
+#mortgage .mortgage-text-wrapper {
   margin-top: 50px;
 }
 
-#mortgage .mortagage-text-wrapper p {
+#mortgage .mortgage-text-wrapper p {
   font-family: "Raleway-Regular";
   color: #fff;
   font-size: 16px;
 }
 
-#mortgage .mortagage-forms input {
+#mortgage .mortgage-forms input {
   background-color: rgba(255, 255, 255, 0.2);
   width: 255px;
   height: 50px;
+  color: #fff;
+  padding: 0 15px;
 }
 
-#mortgage .mortagage-forms input::-webkit-input-placeholder {
+#mortgage .mortgage-forms input::-webkit-input-placeholder {
   text-align: center;
   font-family: "Raleway-Regular";
   font-size: 14px;
   color: #BEBEBE;
 }
 
-#mortgage .mortagage-forms input:-ms-input-placeholder {
+#mortgage .mortgage-forms input:-ms-input-placeholder {
   text-align: center;
   font-family: "Raleway-Regular";
   font-size: 14px;
   color: #BEBEBE;
 }
 
-#mortgage .mortagage-forms input::-ms-input-placeholder {
+#mortgage .mortgage-forms input::-ms-input-placeholder {
   text-align: center;
   font-family: "Raleway-Regular";
   font-size: 14px;
   color: #BEBEBE;
 }
 
-#mortgage .mortagage-forms input::placeholder {
+#mortgage .mortgage-forms input::placeholder {
   text-align: center;
   font-family: "Raleway-Regular";
   font-size: 14px;
   color: #BEBEBE;
 }
 
-#mortgage .mortagage-forms .name-input {
+#mortgage .mortgage-forms .name-input {
   margin-right: 30px;
 }
 
-#mortgage .mortagage-forms .submit-wrapper {
+#mortgage .mortgage-forms .submit-wrapper {
   margin-top: 35px;
 }
 
-#mortgage .mortagage-forms .submit-wrapper span {
+#mortgage .mortgage-forms .submit-wrapper span {
   text-align: center;
   font-family: "Raleway-Regular";
   font-size: 13px;
   color: #E7E7E7;
 }
 
-#mortgage .mortagage-forms .submit-wrapper input[type=submit] {
+#mortgage .mortgage-forms .submit-wrapper input[type="submit"] {
   background-color: #d4c17f;
   font-family: "Raleway-Regular";
   font-weight: 700;
   font-size: 16px;
   color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#mortgage .mortgage-forms .submit-wrapper input[type="submit"]:hover {
+  background-color: #fff;
+  color: #d4c17f;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#video {
+  height: 100%;
+  background-color: #242B33;
+  padding-bottom: 120px;
+  position: relative;
+  width: 100%;
+}
+
+#video .back-txt {
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  color: #fff;
+  opacity: 0.02;
+  font-size: 400px;
+  line-height: 0;
+  font-family: "PlayfairDisplay-Bold";
+  white-space: nowrap;
+}
+
+#video .video-container {
+  height: 66vh;
+  width: 37vw;
+  position: relative;
+  z-index: 999;
+}
+
+#map-section {
+  height: 100%;
+  background-color: #242B33;
+  position: relative;
+  width: 100%;
+}
+
+#map-section .title {
+  font-family: "PlayfairDisplay-Bold";
+  font-size: 36px;
+  color: #d4c17f;
+  margin-bottom: 100px;
+}
+
+#map-section .map-container {
+  height: 36vh;
+  width: 57vw;
+  position: relative;
+  z-index: 999;
+  margin: 0 auto;
+}
+
+#contact {
+  background-color: #242B33;
+  padding: 180px 0;
+}
+
+#contact .title {
+  font-family: "PlayfairDisplay-Bold";
+  font-size: 36px;
+  color: #d4c17f;
+  margin-bottom: 50px;
+}
+
+#contact .contact-forms input {
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 255px;
+  height: 50px;
+  color: #fff;
+  padding: 0 15px;
+}
+
+#contact .contact-forms input::-webkit-input-placeholder {
+  text-align: center;
+  font-family: "Raleway-Regular";
+  font-size: 14px;
+  color: #BEBEBE;
+}
+
+#contact .contact-forms input:-ms-input-placeholder {
+  text-align: center;
+  font-family: "Raleway-Regular";
+  font-size: 14px;
+  color: #BEBEBE;
+}
+
+#contact .contact-forms input::-ms-input-placeholder {
+  text-align: center;
+  font-family: "Raleway-Regular";
+  font-size: 14px;
+  color: #BEBEBE;
+}
+
+#contact .contact-forms input::placeholder {
+  text-align: center;
+  font-family: "Raleway-Regular";
+  font-size: 14px;
+  color: #BEBEBE;
+}
+
+#contact .contact-forms input[type="submit"] {
+  background-color: #d4c17f;
+  font-family: "Raleway-Regular";
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#contact .contact-forms input[type="submit"]:hover {
+  background-color: #fff;
+  color: #d4c17f;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#contact .contact-forms span {
+  text-align: center;
+  font-family: "Raleway-Regular";
+  font-size: 13px;
+  color: #E7E7E7;
+}
+
+footer {
+  background-color: #2D343C;
+  padding: 60px 0;
+}
+
+footer .footer-logo h1 {
+  color: #fff;
+  font-family: "PostNoBillsJaffna-SemiBold";
+  font-size: 36px;
+}
+
+footer .footer-logo p {
+  color: #fff;
+  font-family: "Raleway-Regular";
+  font-size: 12px;
+  letter-spacing: 0.12em;
+}
+
+footer .footer-links a {
+  color: #fff !important;
+  font-family: "Raleway-Regular";
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  padding: 0;
+  line-height: 2;
+}
+
+footer .footer-links a span {
+  color: #d4c17f;
+  font-family: "Raleway-Bold";
+}
+
+footer .footer-links .footer-socials a {
+  padding: 5px 5px !important;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+footer .footer-links .footer-socials a:hover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+footer .footer-links .footer-socials a::after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: ".";
+  color: transparent;
+  background: #d4c17f;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+footer .footer-links .footer-socials a:hover::after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 /*# sourceMappingURL=styles.css.map */

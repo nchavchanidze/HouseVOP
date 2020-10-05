@@ -1,7 +1,6 @@
 #apartments {
     height: 100%;
     background-color: $color3;
-    padding-bottom: 120px;
     position: relative;
     .back-txt {
         position: absolute;
@@ -12,6 +11,7 @@
         font-size: 400px;
         line-height: 0;
         font-family: $font3;
+        white-space: nowrap;
     }
     .title {
         font-family: $font3;

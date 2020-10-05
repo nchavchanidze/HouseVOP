@@ -1,9 +1,10 @@
-.testimonial {
+#video {
     height: 100%;
     background-color: $color3;
-    padding-top: 120px;
+    // padding-top: 120px;
     padding-bottom: 120px;
     position: relative;
+    width: 100%;
     .back-txt {
         position: absolute;
         top: 50%;
@@ -15,17 +16,10 @@
         font-family: $font3;
         white-space: nowrap;
     }
-    .testimonial-img {
-        height: 80px;
-        margin-bottom: 53px;
-        img {
-            height: 100%;
-        }
-    }
-    p {
-        text-align: center;
-        font-family: $font4;
-        color: $color1;
-        font-size: 20px;
+    .video-container {
+        height: 66vh;
+        width: 37vw;
+        position: relative;
+        z-index: 999;
     }
 }
